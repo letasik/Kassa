@@ -174,16 +174,136 @@ public class View extends JFrame {
 	        
 	    });
 		
+		addItem.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("additem button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		removeItem.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("removeitem button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		eksportJournal.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println(" eksport journal button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		removeJournal.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("removejournal  button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		journalWindow.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("journalwindow button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		addUser.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("adduser button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		removeUser.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("removeuser button pressed");
+				
+				
+			}
+	        
+	    });
+		
+		userJournal.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("userjournal button pressed");
+				
+				
+			}
+	        
+	    });
 		
 		
+		users.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("user selected");
+				
+				
+			}
+	        
+	    });
 		
-		
-		
-		
-		
-		
-		
-		
+		okButton.addActionListener(new ActionListener() {
+			  
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				System.out.println("quantity"+ quantity.getText());
+				System.out.println("quantity selected");
+				
+			}
+	        
+	    });
 		
 		
 		mainframe.getContentPane().add(workArea);	
@@ -266,6 +386,29 @@ public class View extends JFrame {
 	}
 
 	//say some comments
+	
+	
+	//buttons
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
