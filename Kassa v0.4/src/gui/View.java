@@ -230,7 +230,7 @@ public class View extends JFrame {
 		mainframe.setVisible(true);
 		mainframe.setSize(1024, 768);
 		mainframe.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		mainframe.setTitle("Кассовый аппарат v0.4.1");
+		mainframe.setTitle("Кассовый аппарат v0.4.1 master");
 		
 	}
 	
