@@ -265,7 +265,7 @@ public class View extends JFrame {
 		
 	}
 
-	
+	//say some comments
 	
 	
 	
