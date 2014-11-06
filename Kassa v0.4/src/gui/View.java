@@ -135,7 +135,7 @@ public class View extends JFrame {
 		ktkPanel.add(userJournal);
 
 		
-		workArea.add(ktkPanel, BorderLayout.CENTER);
+		//workArea.add(ktkPanel, BorderLayout.CENTER);
 		
 		
 		
@@ -153,6 +153,7 @@ public class View extends JFrame {
 				System.out.println("KTK button pressed");
 				ktkPanel.setVisible(true);
 				mainPanelCustomer.setVisible(false);
+				workArea.add(ktkPanel, BorderLayout.CENTER);
 			}
 	        
 	    });
@@ -230,7 +231,7 @@ public class View extends JFrame {
 		mainframe.setVisible(true);
 		mainframe.setSize(1024, 768);
 		mainframe.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		mainframe.setTitle("Кассовый аппарат v0.4.1 master");
+		mainframe.setTitle("Кассовый аппарат v0.4.1a");
 		
 	}
 	
