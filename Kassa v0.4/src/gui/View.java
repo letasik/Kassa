@@ -10,6 +10,7 @@ import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -56,8 +57,9 @@ public class View extends JFrame {
 	static JButton addUser = new JButton("добавить пользователя");
 	static JButton removeUser = new JButton("удалить пользователя");
 	static JButton userJournal = new JButton("История пользователя");
-	
-	
+	final JFrame popUpFrame = new JFrame(); // freim dlja popup okna
+	String itemName = new String ();
+	Double itemPrice;
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
 	
@@ -181,6 +183,11 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("additem button pressed");
+				//JOptionPane.showMessageDialog(popUpFrame,
+					    //"Eggs are not supposed to be green.");
+				AddItem item = new AddItem();
+				
+				
 				
 				
 			}
@@ -194,6 +201,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("removeitem button pressed");
+				RemoveItem rem = new RemoveItem();
 				
 				
 			}
@@ -207,7 +215,8 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println(" eksport journal button pressed");
-				
+				JOptionPane.showMessageDialog(popUpFrame,
+			    "Журнал экспортирован в файл");
 				
 			}
 	        
@@ -220,7 +229,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("removejournal  button pressed");
-				
+				JOptionPane.showConfirmDialog(popUpFrame, "Точно потереть?");
 				
 			}
 	        
@@ -233,7 +242,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("journalwindow button pressed");
-				
+				WatchHistory hist = new WatchHistory();
 				
 			}
 	        
@@ -246,7 +255,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("adduser button pressed");
-				
+				AddUser user = new AddUser();
 				
 			}
 	        
@@ -259,7 +268,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("removeuser button pressed");
-				
+				RemoveUser remus = new RemoveUser();
 				
 			}
 	        
@@ -272,7 +281,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("userjournal button pressed");
-				
+				WatchUserHistory ushis = new WatchUserHistory();
 				
 			}
 	        
