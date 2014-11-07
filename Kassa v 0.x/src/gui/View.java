@@ -56,7 +56,9 @@ public class View extends JFrame {
 	static JButton addUser = new JButton("добавить пользователя");
 	static JButton removeUser = new JButton("удалить пользователя");
 	static JButton userJournal = new JButton("История пользователя");
-	
+	final JFrame popUpFrame = new JFrame(); // freim dlja popup okna
+	String itemName = new String ();
+	Double itemPrice;
 	
 	
 	//////////////////////////////////////////////////////////////////////////////////////////
@@ -181,7 +183,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("additem button pressed");
-				
+				AddItem add  = new AddItem();
 				
 			}
 	        
@@ -194,7 +196,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("removeitem button pressed");
-				
+				RemoveItem remite = new RemoveItem();
 				
 			}
 	        
@@ -222,6 +224,16 @@ public class View extends JFrame {
 				System.out.println("removejournal  button pressed");
 				
 				
+		
+				
+			
+				
+				
+				
+				
+				
+				
+				
 			}
 	        
 	    });
@@ -233,7 +245,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("journalwindow button pressed");
-				
+				WatchHistory wtchhist = new WatchHistory();
 				
 			}
 	        
@@ -246,7 +258,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("adduser button pressed");
-				
+				AddUser addusr = new AddUser();
 				
 			}
 	        
@@ -259,7 +271,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("removeuser button pressed");
-				
+				RemoveUser rmusr = new RemoveUser();
 				
 			}
 	        
@@ -272,6 +284,7 @@ public class View extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
 				System.out.println("userjournal button pressed");
+				WatchUserHistory usrhstr = new WatchUserHistory();
 				
 				
 			}
